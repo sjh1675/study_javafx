@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane fx:id="user_info" maxHeight="350.0" maxWidth="400.0" minHeight="350.0" minWidth="400.0" prefHeight="350.0" prefWidth="400.0" stylesheets="@../css/admin.css" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="hospital.controller.admin.data.Admin_User_Info">
+   <children>
+      <TableView fx:id="user_tbl" maxHeight="250.0" maxWidth="400.0" minHeight="250.0" minWidth="400.0" prefHeight="250.0" prefWidth="400.0">
+        <columns>
+          <TableColumn fx:id="user_chk" maxWidth="35.0" minWidth="35.0" prefWidth="35.0" resizable="false" />
+          <TableColumn fx:id="user_id" maxWidth="90.0" minWidth="90.0" prefWidth="90.0" resizable="false" styleClass="tableFont" text="아이디" />
+          <TableColumn fx:id="user_name" maxWidth="70.0" minWidth="70.0" prefWidth="70.0" resizable="false" styleClass="tableFont" text="이름" />
+          <TableColumn fx:id="user_regNum" maxWidth="80.0" minWidth="80.0" resizable="false" styleClass="tableFont" text="생년월일" />
+          <TableColumn fx:id="user_phoneNum" maxWidth="124.0" minWidth="115.0" prefWidth="124.0" resizable="false" styleClass="tableFont" text="연락처" />
+        </columns>
+      </TableView>
+      <HBox alignment="CENTER" layoutX="100.0" layoutY="279.0" prefHeight="30.0" prefWidth="200.0" spacing="20.0">
+         <children>
+            <Button fx:id="user_inpatient_in" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" prefHeight="35.0" prefWidth="60.0" text="입원">
+               <styleClass>
+                  <String fx:value="userBtn" />
+                  <String fx:value="btnFont" />
+               </styleClass></Button>
+            <Button fx:id="user_inpatient_out" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" prefHeight="35.0" prefWidth="60.0" text="퇴원">
+               <styleClass>
+                  <String fx:value="userBtn" />
+                  <String fx:value="btnFont" />
+               </styleClass></Button>
+         </children>
+      </HBox>
+      <Button fx:id="user_refresh" layoutX="331.0" layoutY="257.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" prefHeight="35.0" prefWidth="60.0" text="새로고침">
+         <styleClass>
+            <String fx:value="userBtn" />
+            <String fx:value="btnFont" />
+         </styleClass></Button>
+   </children>
+</AnchorPane>

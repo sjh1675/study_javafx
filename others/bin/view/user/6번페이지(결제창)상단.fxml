@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="700.0" prefWidth="720.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.Payment">
+   <children>
+      <ImageView fitHeight="50.0" fitWidth="720.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../img/6페이지%20상단로고.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="650.0" fitWidth="720.0" layoutY="50.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../img/6페이지%20결제창%20상단.png" />
+         </image>
+      </ImageView>
+      <Label fx:id="catagroy" layoutX="286.0" layoutY="178.0" prefHeight="48.0" prefWidth="350.0" text="중형세탁기">
+         <font>
+            <Font size="41.0" />
+         </font>
+      </Label>
+      <Label fx:id="temperature" layoutX="286.0" layoutY="247.0" prefHeight="48.0" prefWidth="350.0" text="뜨거움">
+         <font>
+            <Font size="41.0" />
+         </font>
+      </Label>
+      <Label fx:id="mdegree" layoutX="286.0" layoutY="319.0" prefHeight="48.0" prefWidth="350.0" text="강함">
+         <font>
+            <Font size="41.0" />
+         </font>
+      </Label>
+      <Label fx:id="mamount" layoutX="294.0" layoutY="435.0" prefHeight="48.0" prefWidth="350.0" text="5500">
+         <font>
+            <Font size="41.0" />
+         </font>
+      </Label>
+      <Button fx:id="btnhome" layoutX="670.0" mnemonicParsing="false" onAction="#home" opacity="0.0" prefHeight="50.0" prefWidth="50.0" text="Button" />
+      <Button fx:id="btnaddmoney" layoutX="92.0" layoutY="536.0" mnemonicParsing="false" onAction="#addmoney" opacity="0.0" prefHeight="117.0" prefWidth="218.0" text="Button" />
+      <Button fx:id="btnpaymentend" layoutX="427.0" layoutY="536.0" mnemonicParsing="false" onAction="#paymentend" opacity="0.0" prefHeight="117.0" prefWidth="227.0" text="Button" />
+      <Label prefHeight="50.0" prefWidth="64.0" style="-fx-background-color: #ffffff;" text="Label" textFill="WHITE" />
+      <ImageView fitHeight="44.0" fitWidth="67.0" layoutX="3.0" layoutY="3.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../img/뒤로가기2.png" />
+         </image>
+      </ImageView>
+      <Button fx:id="back99" layoutY="3.0" mnemonicParsing="false" onAction="#accback99" opacity="0.0" prefHeight="44.0" prefWidth="64.0" text="Button" />
+   </children>
+</AnchorPane>

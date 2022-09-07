@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane maxHeight="350.0" maxWidth="400.0" minHeight="350.0" minWidth="400.0" prefHeight="350.0" prefWidth="400.0" stylesheets="@../css/client.css" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="hospital.controller.user.data.User_Edit">
+   <children>
+      <GridPane alignment="CENTER" layoutX="14.0" layoutY="14.0" maxWidth="350.0" minWidth="350.0" prefHeight="300.0" prefWidth="350.0">
+        <columnConstraints>
+          <ColumnConstraints halignment="LEFT" hgrow="SOMETIMES" maxWidth="90.0" minWidth="90.0" prefWidth="90.0" />
+          <ColumnConstraints halignment="CENTER" hgrow="SOMETIMES" maxWidth="99.0" minWidth="10.0" prefWidth="91.0" />
+            <ColumnConstraints halignment="CENTER" hgrow="SOMETIMES" maxWidth="80.0" minWidth="80.0" prefWidth="80.0" />
+            <ColumnConstraints halignment="CENTER" hgrow="SOMETIMES" maxWidth="80.0" minWidth="80.0" prefWidth="80.0" />
+        </columnConstraints>
+        <rowConstraints>
+          <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+          <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+          <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+        </rowConstraints>
+         <children>
+            <Label styleClass="lblFont" text="아이디" />
+            <TextField fx:id="edit_id" editable="false" styleClass="txtFont" GridPane.columnIndex="1" />
+            <Label styleClass="lblFont" text="비밀번호" GridPane.rowIndex="1" />
+            <PasswordField fx:id="edit_pw" styleClass="txtFont" GridPane.columnIndex="1" GridPane.rowIndex="1" />
+            <Label styleClass="lblFont" text="비밀번호 확인" GridPane.rowIndex="2" />
+            <PasswordField fx:id="edit_pw_check" styleClass="txtFont" GridPane.columnIndex="1" GridPane.rowIndex="2" />
+            <Label styleClass="lblFont" text="이름" GridPane.rowIndex="3" />
+            <TextField fx:id="edit_name" editable="false" styleClass="txtFont" GridPane.columnIndex="1" GridPane.rowIndex="3" />
+            <Label styleClass="lblFont" text="주민번호" GridPane.rowIndex="4" />
+            <TextField fx:id="edit_reg_first" editable="false" styleClass="txtFont" GridPane.columnIndex="1" GridPane.rowIndex="4" />
+            <Label styleClass="lblFont" text="전화번호" GridPane.rowIndex="5" />
+            <ChoiceBox fx:id="edit_phone_first" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="30.0" prefWidth="70.0" styleClass="phone" GridPane.columnIndex="1" GridPane.rowIndex="5" />
+            <TextField fx:id="edit_phone_middle" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefWidth="60.0" promptText="0000" styleClass="txtFont" GridPane.columnIndex="2" GridPane.rowIndex="5" />
+            <TextField fx:id="edit_phone_last" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefWidth="60.0" promptText="0000" styleClass="txtFont" GridPane.columnIndex="3" GridPane.rowIndex="5" />
+            <Button fx:id="edit_enter" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="30.0" prefWidth="60.0" text="확인" GridPane.columnIndex="1" GridPane.rowIndex="6">
+               <styleClass>
+                  <String fx:value="editBtn" />
+                  <String fx:value="btnFont" />
+               </styleClass></Button>
+            <Button fx:id="edit_cancel" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="30.0" prefWidth="60.0" text="취소" GridPane.columnIndex="2" GridPane.rowIndex="6">
+               <styleClass>
+                  <String fx:value="editBtn" />
+                  <String fx:value="btnFont" />
+               </styleClass></Button>
+            <Button fx:id="edit_withdraw" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" prefHeight="30.0" prefWidth="60.0" text="탈퇴" GridPane.columnIndex="3" GridPane.rowIndex="6">
+               <styleClass>
+                  <String fx:value="editBtn" />
+                  <String fx:value="btnFont" />
+               </styleClass></Button>
+         </children>
+      </GridPane>
+      <Label layoutX="211.0" layoutY="71.0" styleClass="warFont" text="8자~12자 영문자 숫자 특수문자 포함" />
+      <Label fx:id="edit_pw_warning" layoutX="211.0" layoutY="113.0" styleClass="warFont" text="비밀번호가 달라요" />
+   </children>
+</AnchorPane>

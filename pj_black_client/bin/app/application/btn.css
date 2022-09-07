@@ -1,0 +1,19 @@
+Button {
+    -fx-text-fill: #FAFAFA;
+    -fx-font-size:25px;
+   	-fx-font-family:'Yanolja Yache R';
+    -fx-background-color: linear-gradient(#61a2b1, #2A5058);
+    -fx-effect: dropshadow( three-pass-box , rgba(0,0,0,0.6) , 5, 0.0 , 0 , 1 );
+}
+
+.button:hover {
+	-fx-font-size:25px;
+    -fx-background-color: linear-gradient(#2A5058, #61a2b1);
+}
+
+.button#rule{
+	-fx-font-size:18px;
+}
+.button#cSend{
+	-fx-font-size:15px;
+}

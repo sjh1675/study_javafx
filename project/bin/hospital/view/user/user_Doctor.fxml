@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.image.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane maxHeight="350.0" maxWidth="400.0" minHeight="350.0" minWidth="400.0" prefHeight="350.0" prefWidth="400.0" stylesheets="@../css/client.css" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="hospital.controller.user.data.User_Doctor">
+   <children>
+      <VBox layoutX="100.0" layoutY="37.0" spacing="15.0">
+         <children>
+            <ImageView fx:id="doctor_img" fitHeight="200.0" fitWidth="200.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../img/doctor.png" />
+               </image>
+            </ImageView>
+            <VBox layoutX="150.0" layoutY="230.0" prefHeight="50.0" prefWidth="100.0" spacing="15.0">
+               <children>
+                  <Label fx:id="doctor_name" styleClass="lblFont" text="이름 : 최기근" />
+                  <Label fx:id="doctor_task" styleClass="lblFont" text="진료 분야 : 자바" />
+               </children>
+            </VBox>
+         </children>
+      </VBox>
+   </children>
+</AnchorPane>

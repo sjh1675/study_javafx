@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.shape.Line?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="950.0" prefWidth="720.0" style="-fx-background-color: #32A4FF;" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.machine.Choose">
+   <children>
+      <Line endX="563.0" layoutX="157.0" layoutY="708.0" startX="-157.0" />
+      <Line endX="563.0" layoutX="157.0" layoutY="935.0" startX="-157.0" />
+      <ImageView fitHeight="50.0" fitWidth="720.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../img/3페이지%20세탁및건조%20상단로고.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="650.0" fitWidth="720.0" layoutY="50.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../img/3페이지%20세탁및%20건조.png" />
+         </image>
+      </ImageView>
+      <Button fx:id="btn2" layoutX="47.0" layoutY="416.0" mnemonicParsing="false" onAction="#acc2" opacity="0.0" prefHeight="227.0" prefWidth="627.0" text="Button" />
+      <Button fx:id="btn1" layoutX="47.0" layoutY="102.0" mnemonicParsing="false" onAction="#acc1" opacity="0.0" prefHeight="227.0" prefWidth="627.0" text="Button" />
+      <Button fx:id="btnhome" layoutX="670.0" mnemonicParsing="false" onAction="#acchome" opacity="0.0" prefHeight="50.0" prefWidth="50.0" text="Button" />
+      <ImageView fitHeight="219.0" fitWidth="559.0" layoutX="87.0" layoutY="713.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../img/광고2.jpg" />
+         </image>
+      </ImageView>
+      <Label prefHeight="50.0" prefWidth="64.0" style="-fx-background-color: #ffffff;" text="Label" textFill="WHITE" />
+      <ImageView fitHeight="44.0" fitWidth="67.0" layoutX="3.0" layoutY="3.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../img/뒤로가기2.png" />
+         </image>
+      </ImageView>
+      <Button fx:id="back99" layoutY="3.0" mnemonicParsing="false" onAction="#accback99" opacity="0.0" prefHeight="44.0" prefWidth="64.0" text="Button" />
+   </children>
+</AnchorPane>

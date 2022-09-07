@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.AnchorPane?>
+
+
+<AnchorPane prefHeight="280.0" prefWidth="480.0" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/8">
+   <children>
+      <Label layoutX="38.0" layoutY="45.0" text="제목" />
+      <Label layoutX="38.0" layoutY="100.0" text="내용" />
+      <TextField id="textTitle" layoutX="82.0" layoutY="41.0" prefHeight="23.0" prefWidth="356.0" />
+      <TextArea id="textContent" layoutX="39.0" layoutY="119.0" prefHeight="99.0" prefWidth="402.0" />
+      <Separator layoutX="39.0" layoutY="226.0" prefHeight="0.0" prefWidth="402.0" />
+      <Button id="btnOK" layoutX="163.0" layoutY="243.0" mnemonicParsing="false" text="등록" />
+      <Button id="btnCancel" layoutX="278.0" layoutY="243.0" mnemonicParsing="false" text="취소" />
+   </children>
+</AnchorPane>

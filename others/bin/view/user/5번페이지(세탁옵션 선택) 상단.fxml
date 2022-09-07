@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.RadioButton?>
+<?import javafx.scene.control.ToggleGroup?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="700.0" prefWidth="720.0" style="-fx-background-color: #32A4FF;" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.machine.OptionChoose">
+   <children>
+      <ImageView fitHeight="50.0" fitWidth="720.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../img/5페이지%20상단로고.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="650.0" fitWidth="720.0" layoutY="50.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../img/5페이지%20기계%20선택%20상단.png" />
+         </image>
+      </ImageView>
+      <RadioButton fx:id="opt1_1" layoutX="112.0" layoutY="199.0" mnemonicParsing="false" onMouseClicked="#clickevent1" selected="true" text="뜨거움">
+         <font>
+            <Font size="21.0" />
+         </font>
+         <toggleGroup>
+            <ToggleGroup fx:id="temperature" />
+         </toggleGroup>
+      </RadioButton>
+      <RadioButton fx:id="opt1_3" layoutX="112.0" layoutY="290.0" mnemonicParsing="false" onMouseClicked="#clickevent3" text="차가움" toggleGroup="$temperature">
+         <font>
+            <Font size="21.0" />
+         </font>
+      </RadioButton>
+      <RadioButton fx:id="opt1_2" layoutX="112.0" layoutY="245.0" mnemonicParsing="false" onMouseClicked="#clickevent2" text="중간" toggleGroup="$temperature">
+         <font>
+            <Font size="21.0" />
+         </font>
+      </RadioButton>
+      <RadioButton fx:id="opt2_2" layoutX="112.0" layoutY="526.0" mnemonicParsing="false" onMouseClicked="#clickevent5" text="약함">
+         <font>
+            <Font size="21.0" />
+         </font>
+         <toggleGroup>
+            <ToggleGroup fx:id="degree" />
+         </toggleGroup>
+      </RadioButton>
+      <RadioButton fx:id="opt2_1" layoutX="112.0" layoutY="481.0" mnemonicParsing="false" onMouseClicked="#clickevent4" selected="true" text="강함" toggleGroup="$degree">
+         <font>
+            <Font size="21.0" />
+         </font>
+      </RadioButton>
+      <Label fx:id="lblmkind" layoutX="411.0" layoutY="127.0" prefHeight="42.0" prefWidth="261.0" text="1번중형세탁기">
+         <font>
+            <Font size="35.0" />
+         </font>
+      </Label>
+      <Button fx:id="btnhome" layoutX="670.0" mnemonicParsing="false" onAction="#acchome" opacity="0.0" prefHeight="50.0" prefWidth="50.0" text="butt" />
+      <Button fx:id="btncp" layoutX="411.0" layoutY="543.0" mnemonicParsing="false" onAction="#cp" prefHeight="64.0" prefWidth="184.0" text="완료">
+         <font>
+            <Font size="36.0" />
+         </font>
+      </Button>
+      <Label prefHeight="50.0" prefWidth="64.0" style="-fx-background-color: #ffffff;" text="Label" textFill="WHITE" />
+      <ImageView fitHeight="44.0" fitWidth="67.0" layoutX="3.0" layoutY="3.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../img/뒤로가기2.png" />
+         </image>
+      </ImageView>
+      <Button fx:id="back99" layoutY="3.0" mnemonicParsing="false" onAction="#accback99" opacity="0.0" prefHeight="44.0" prefWidth="64.0" text="Button" />
+   </children>
+</AnchorPane>

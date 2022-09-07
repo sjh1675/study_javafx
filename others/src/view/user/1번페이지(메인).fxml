@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.media.MediaView?>
+<?import javafx.scene.shape.Line?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="950.0" prefWidth="720.0" style="-fx-background-color: #32A4FF;" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.machine.main_1">
+   <children>
+      <Line endX="621.0" layoutX="99.0" layoutY="731.0" startX="-99.0" stroke="WHITE" strokeWidth="3.0" />
+      <ImageView fitHeight="50.0" fitWidth="720.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../img/1페이지상단로고.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="210.0" fitWidth="723.0" layoutX="-2.0" layoutY="733.0">
+         <image>
+            <Image url="@../../img/빨래방메인2.png" />
+         </image>
+      </ImageView>
+      <Button fx:id="bunstart" layoutX="74.0" layoutY="785.0" mnemonicParsing="false" onAction="#start" prefHeight="98.0" prefWidth="228.0" style="-fx-opacity: 0;" />
+      <MediaView fx:id="mediaview" fitHeight="600.0" fitWidth="600.0" layoutX="60.0" layoutY="123.0" />
+      <Button fx:id="bunstart2" layoutX="418.0" layoutY="784.0" mnemonicParsing="false" onAction="#start2" prefHeight="98.0" prefWidth="228.0" style="-fx-opacity: 0;" />
+   </children>
+</AnchorPane>

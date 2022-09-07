@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="700.0" prefWidth="720.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.phone.DialInput">
+   <children>
+      <ImageView fitHeight="50.0" fitWidth="720.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../img/2번페이지%20상단로고.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="650.0" fitWidth="720.0" layoutY="50.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../img/2페이지상단.png" />
+         </image>
+      </ImageView>
+      <Button fx:id="btn1" layoutX="203.0" layoutY="259.0" mnemonicParsing="false" onAction="#a1" opacity="0.0" prefHeight="83.0" prefWidth="80.0" text="Button" />
+      <Button fx:id="btn2" layoutX="320.0" layoutY="259.0" mnemonicParsing="false" onAction="#a2" opacity="0.0" prefHeight="83.0" prefWidth="80.0" text="Button" />
+      <Button fx:id="btn3" layoutX="431.0" layoutY="259.0" mnemonicParsing="false" onAction="#a3" opacity="0.0" prefHeight="83.0" prefWidth="80.0" text="Button" />
+      <Button fx:id="btn4" layoutX="206.0" layoutY="368.0" mnemonicParsing="false" onAction="#a4" opacity="0.0" prefHeight="83.0" prefWidth="80.0" text="Button" />
+      <Button fx:id="btn5" layoutX="323.0" layoutY="368.0" mnemonicParsing="false" onAction="#a5" opacity="0.0" prefHeight="83.0" prefWidth="80.0" text="Button" />
+      <Button fx:id="btn6" layoutX="434.0" layoutY="368.0" mnemonicParsing="false" onAction="#a6" opacity="0.0" prefHeight="83.0" prefWidth="80.0" text="Button" />
+      <Button fx:id="btn7" layoutX="206.0" layoutY="470.0" mnemonicParsing="false" onAction="#a7" opacity="0.0" prefHeight="83.0" prefWidth="80.0" text="Button" />
+      <Button fx:id="btn8" layoutX="323.0" layoutY="470.0" mnemonicParsing="false" onAction="#a8" opacity="0.0" prefHeight="83.0" prefWidth="80.0" text="Button" />
+      <Button fx:id="btn9" layoutX="434.0" layoutY="470.0" mnemonicParsing="false" onAction="#a9" opacity="0.0" prefHeight="83.0" prefWidth="80.0" text="Button" />
+      <Button fx:id="btnback" layoutX="209.0" layoutY="569.0" mnemonicParsing="false" onAction="#back" opacity="0.0" prefHeight="83.0" prefWidth="80.0" text="Button" />
+      <Button fx:id="btn0" layoutX="326.0" layoutY="569.0" mnemonicParsing="false" onAction="#a0" opacity="0.0" prefHeight="83.0" prefWidth="80.0" text="Button" />
+      <Button fx:id="btncheck" layoutX="437.0" layoutY="569.0" mnemonicParsing="false" onAction="#check" opacity="0.0" prefHeight="83.0" prefWidth="80.0" text="Button" />
+      <Button fx:id="btnhome" layoutX="670.0" mnemonicParsing="false" onAction="#home" opacity="0.0" prefHeight="50.0" prefWidth="50.0" text="Button" />
+      <Label prefHeight="50.0" prefWidth="64.0" style="-fx-background-color: #ffffff;" text="Label" textFill="WHITE" />
+      <ImageView fitHeight="44.0" fitWidth="67.0" layoutX="3.0" layoutY="3.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../img/뒤로가기2.png" />
+         </image>
+      </ImageView>
+      <Button fx:id="back99" layoutX="-1.0" layoutY="1.0" mnemonicParsing="false" onAction="#accback99" opacity="0.0" prefHeight="44.0" prefWidth="64.0" text="Button" />
+   </children>
+</AnchorPane>

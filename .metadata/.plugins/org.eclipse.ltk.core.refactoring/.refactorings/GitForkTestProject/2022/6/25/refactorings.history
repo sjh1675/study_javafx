@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Rename package &apos;shin&apos; to &apos;shinJiHoon&apos;&#x0D;&#x0A;- Original project: &apos;GitForkTestProject&apos;&#x0D;&#x0A;- Original element: &apos;GitForkTestProject/src/shin&apos;&#x0D;&#x0A;- Renamed element: &apos;GitForkTestProject/src/shinJiHoon&apos;&#x0D;&#x0A;- Update references to refactored element&#x0D;&#x0A;- Update textual occurrences in comments and strings" description="Rename package &apos;shin&apos;" flags="589830" hierarchical="false" id="org.eclipse.jdt.ui.rename.package" input="/src&lt;shin" name="shinJiHoon" qualified="false" references="true" stamp="1655360682411" textual="false" version="1.0"/>
+</session>

@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.BorderPane?>
+
+
+<BorderPane prefHeight="300.0" prefWidth="500.0" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/8" fx:controller="chat_server.ServerController">
+   <center>
+      <TextArea fx:id="displayText" prefHeight="200.0" prefWidth="200.0" BorderPane.alignment="CENTER" />
+   </center>
+   <bottom>
+      <HBox spacing="5.0" BorderPane.alignment="CENTER">
+         <children>
+            <TextField fx:id="txtPort" promptText="PORT 번호 입력" />
+            <Button fx:id="btnStartStop" maxWidth="1.7976931348623157E308" mnemonicParsing="false" text="START" HBox.hgrow="ALWAYS" />
+         </children>
+         <padding>
+            <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+         </padding>
+      </HBox>
+   </bottom>
+</BorderPane>

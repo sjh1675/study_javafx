@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.chart.AreaChart?>
+<?import javafx.scene.chart.CategoryAxis?>
+<?import javafx.scene.chart.NumberAxis?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="950.0" prefWidth="720.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <ImageView fitHeight="50.0" fitWidth="720.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../img/임시로고.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="900.0" fitWidth="720.0" layoutY="50.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../img/7페이지.png" />
+         </image>
+      </ImageView>
+      <Button layoutX="36.0" layoutY="80.0" mnemonicParsing="false" prefHeight="111.0" prefWidth="330.0" text="Button" />
+      <Button layoutX="387.0" layoutY="80.0" mnemonicParsing="false" prefHeight="111.0" prefWidth="313.0" text="Button" />
+      <Button layoutX="663.0" mnemonicParsing="false" prefHeight="50.0" prefWidth="57.0" text="Button" />
+      <AreaChart layoutX="61.0" layoutY="266.0" prefHeight="614.0" prefWidth="611.0">
+        <xAxis>
+          <CategoryAxis side="BOTTOM" />
+        </xAxis>
+        <yAxis>
+          <NumberAxis side="LEFT" />
+        </yAxis>
+      </AreaChart>
+   </children>
+</AnchorPane>

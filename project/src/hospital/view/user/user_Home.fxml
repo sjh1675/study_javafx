@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.image.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.geometry.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<Pane fx:id="root" style="-fx-background-color: white;" stylesheets="@../css/client.css" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="hospital.controller.user.User_Home">
+   <children>
+      <AnchorPane fx:id="home" prefHeight="480.0" prefWidth="640.0">
+            <opaqueInsets>
+               <Insets />
+            </opaqueInsets>
+            <children>
+               <VBox alignment="CENTER" maxHeight="480.0" minHeight="480.0" prefHeight="480.0" prefWidth="160.0">
+                  <children>
+                  <Label styleClass="titleFont" text="영남병원">
+                     <VBox.margin>
+                        <Insets right="24.0" top="15.0" />
+                     </VBox.margin></Label>
+                           <VBox maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="200.0" spacing="27.0">
+                              <children>
+                              	 <Button fx:id="home_toMain" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="35.0" prefWidth="120.0" text="홈" VBox.vgrow="ALWAYS">
+                           <styleClass>
+                              <String fx:value="leftSideBtn" />
+                              <String fx:value="btnFont" />
+                           </styleClass>
+                           <VBox.margin>
+                              <Insets />
+                           </VBox.margin>
+                           <padding>
+                              <Insets top="1.0" />
+                           </padding></Button>
+                                 <Button fx:id="home_toDoctor" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="35.0" prefWidth="120.0" text="의료진 안내">
+                           <styleClass>
+                              <String fx:value="leftSideBtn" />
+                              <String fx:value="btnFont" />
+                           </styleClass>
+                           <VBox.margin>
+                              <Insets />
+                           </VBox.margin>
+                           <padding>
+                              <Insets top="1.0" />
+                           </padding></Button>
+                                 <Button fx:id="home_toResv" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="35.0" prefWidth="120.0" text="진료 예약">
+                           <styleClass>
+                              <String fx:value="leftSideBtn" />
+                              <String fx:value="btnFont" />
+                           </styleClass>
+                           <VBox.margin>
+                              <Insets />
+                           </VBox.margin>
+                           <padding>
+                              <Insets top="1.0" />
+                           </padding></Button>
+                                 <Button fx:id="home_toChat" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="35.0" prefWidth="120.0" text="실시간 상담">
+                           <styleClass>
+                              <String fx:value="leftSideBtn" />
+                              <String fx:value="btnFont" />
+                           </styleClass>
+                           <VBox.margin>
+                              <Insets />
+                           </VBox.margin>
+                           <padding>
+                              <Insets top="1.0" />
+                           </padding></Button>
+                                 <Button fx:id="home_toRoute" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="35.0" prefWidth="120.0" text="오시는 길">
+                           <styleClass>
+                              <String fx:value="leftSideBtn" />
+                              <String fx:value="btnFont" />
+                           </styleClass>
+                           <VBox.margin>
+                              <Insets />
+                           </VBox.margin>
+                           <padding>
+                              <Insets top="1.0" />
+                           </padding></Button>
+                                 <Button fx:id="home_exit" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="35.0" prefWidth="120.0" text="종료">
+                           <styleClass>
+                              <String fx:value="leftSideBtn" />
+                              <String fx:value="btnFont" />
+                           </styleClass>
+                           <VBox.margin>
+                              <Insets />
+                           </VBox.margin>
+                           <padding>
+                              <Insets top="1.0" />
+                           </padding></Button>
+                              </children>
+                              <padding>
+                                 <Insets bottom="50.0" left="30.0" right="50.0" top="10.0" />
+                              </padding>
+                           </VBox>
+                  </children>
+               </VBox>
+            <Pane fx:id="viewWrap" layoutX="200.0" layoutY="65.0" maxHeight="350.0" maxWidth="400.0" minHeight="350.0" minWidth="400.0" prefHeight="350.0" prefWidth="400.0" style="-fx-background-color: white;">
+      </Pane>
+            <HBox alignment="CENTER_RIGHT" layoutX="261.0" layoutY="14.0" prefHeight="50.0" prefWidth="365.0" spacing="20.0">
+               <children>
+                  <Button fx:id="home_toEdit" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="40.0" styleClass="topBtn" text="" visible="false" />
+                  <Button fx:id="home_login_switch" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="40.0" styleClass="topBtn" text="로그인" />
+               </children>
+            </HBox>
+            </children>
+         </AnchorPane>
+   </children>
+</Pane>

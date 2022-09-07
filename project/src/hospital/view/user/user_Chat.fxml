@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.effect.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane maxHeight="350.0" maxWidth="400.0" minHeight="350.0" minWidth="400.0" prefHeight="350.0" prefWidth="400.0" stylesheets="@../css/client.css" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="hospital.controller.user.chat.User_Chat">
+   <children>
+      <TextArea fx:id="chat_text_room" editable="false" layoutX="25.0" layoutY="14.0" prefHeight="250.0" prefWidth="350.0">
+         <styleClass>
+            <String fx:value="chatTextArea" />
+            <String fx:value="chatFont" />
+         </styleClass></TextArea>
+      <TextField fx:id="chat_text_in" layoutX="25.0" layoutY="286.0" prefHeight="30.0" prefWidth="300.0" promptText="메세지를 입력하세요.">
+         <styleClass>
+            <String fx:value="chatText" />
+            <String fx:value="chatFont" />
+         </styleClass></TextField>
+      <Button fx:id="chat_enter" layoutX="322.0" layoutY="286.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" prefHeight="30.0" prefWidth="50.0" text="전송">
+         <styleClass>
+            <String fx:value="chatBtn" />
+            <String fx:value="chatFont" />
+         </styleClass></Button>
+   </children>
+</AnchorPane>

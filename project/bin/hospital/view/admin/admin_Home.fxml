@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.paint.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.scene.effect.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.geometry.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane fx:id="admin_home" prefHeight="480.0" prefWidth="640.0" style="-fx-background-color: white;" stylesheets="@../css/admin.css" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="hospital.controller.admin.Admin_Home">
+      <opaqueInsets>
+         <Insets />
+      </opaqueInsets>
+      <children>
+         <VBox alignment="CENTER" maxHeight="480.0" minHeight="480.0" prefHeight="480.0" prefWidth="160.0">
+            <children>
+            <Label styleClass="titleFont" text="영남병원">
+               <VBox.margin>
+                  <Insets right="24.0" top="15.0" />
+               </VBox.margin>
+            </Label>
+               <VBox maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="200.0" spacing="27.0">
+                  <children>
+                     <Button fx:id="home_toMain" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="35.0" prefWidth="120.0" text="홈" textOverrun="CLIP">
+                     <styleClass>
+                        <String fx:value="leftSideBtn" />
+                        <String fx:value="btnFont" />
+                     </styleClass>
+                     <font>
+                        <Font name="Nelna LizzyChae" size="12.0" />
+                     </font></Button>
+                     <Button fx:id="home_toUserInfo" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="35.0" prefWidth="120.0" text="회원 목록" textOverrun="CLIP">
+                     <styleClass>
+                        <String fx:value="leftSideBtn" />
+                        <String fx:value="btnFont" />
+                     </styleClass></Button>
+                     <Button fx:id="home_toReservInfo" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="35.0" prefWidth="120.0" text="진료 예약 목록" textOverrun="CLIP">
+                     <styleClass>
+                        <String fx:value="leftSideBtn" />
+                        <String fx:value="btnFont" />
+                     </styleClass></Button>
+                     <Button fx:id="home_toInpatientInfo" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="35.0" prefWidth="120.0" text="입원 환자 목록" textOverrun="CLIP">
+                     <styleClass>
+                        <String fx:value="leftSideBtn" />
+                        <String fx:value="btnFont" />
+                     </styleClass></Button>
+                     <Button fx:id="home_toAdminChat" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="35.0" prefWidth="120.0" text="실시간 채팅" textOverrun="CLIP">
+                     <styleClass>
+                        <String fx:value="leftSideBtn" />
+                        <String fx:value="btnFont" />
+                     </styleClass></Button>
+                     <Button fx:id="home_exit" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="35.0" prefWidth="120.0" text="종료" textOverrun="CLIP">
+                     <styleClass>
+                        <String fx:value="leftSideBtn" />
+                        <String fx:value="btnFont" />
+                     </styleClass></Button>
+                  </children>
+                  <padding>
+                     <Insets bottom="50.0" left="30.0" right="50.0" top="10.0" />
+                  </padding>
+               </VBox>
+            </children>
+         </VBox>
+      <Pane fx:id="viewWrap" layoutX="200.0" layoutY="65.0" maxHeight="350.0" maxWidth="400.0" minHeight="350.0" minWidth="400.0" prefHeight="350.0" prefWidth="400.0" style="-fx-background-color: white;">
+      </Pane>
+      <VBox alignment="CENTER_RIGHT" fillWidth="false" layoutX="402.0" layoutY="8.0" prefHeight="50.0" prefWidth="200.0" spacing="5.0">
+         <padding>
+            <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+         </padding>
+         <children>
+            <Button fx:id="home_toAdmin" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="40.0" text="관리자님 좋은 하루 되세요!">
+               <styleClass>
+                  <String fx:value="topBtn" />
+                  <String fx:value="btnFont" />
+               </styleClass>
+            </Button>
+         </children>
+      </VBox>
+      </children>
+   </AnchorPane>

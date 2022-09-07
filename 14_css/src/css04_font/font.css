@@ -1,0 +1,8 @@
+.lblText {
+	-fx-font-size: 35;
+	-fx-font-weight: normal;	/* normal bold */ /* 글꼴이 굵기 지원이 가능해야 반영됨 */
+	-fx-font-family: 'NelnaLizzyChae', 'Roboto', '굴림', 'gulim', 'Arial Black';
+	-fx-text-fill: red;
+	-fx-text-fill: linear-gradient(to top, pink, red);
+	-fx-text-fill: radial-gradient(center 50% 50%, radius 50%, red, blue);
+}

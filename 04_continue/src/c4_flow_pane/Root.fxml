@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.layout.FlowPane?>
+<?import javafx.scene.control.Button?>
+
+<FlowPane nodeOrientation="RIGHT_TO_LEFT" hgap="10.0" vgap="10.0" prefWidth="300.0" prefHeight="70.0" xmlns:fx="http://javafx.com/fxml/1">
+
+	<children>
+		<Button text="Button1" />
+		<Button text="Button2" />
+		<Button text="Button3" />
+		<Button text="Button4" />
+		<Button text="Button5" />
+		<Button text="Button6" />
+		<Button text="Button7" />
+		<Button text="Button8" />
+		<Button text="Button9" />
+		<Button text="Button10" />
+		<Button text="Button11" />
+		<Button text="Button12" />
+	</children>
+
+</FlowPane>
+

@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="350.0" prefWidth="400.0" stylesheets="@../css/client.css" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="hospital.controller.user.data.User_Join">
+   <children>
+      <GridPane alignment="CENTER" layoutX="35.0" layoutY="34.0" prefHeight="301.0" prefWidth="330.0">
+        <columnConstraints>
+          <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+          <ColumnConstraints halignment="CENTER" hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+            <ColumnConstraints halignment="CENTER" hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+            <ColumnConstraints halignment="CENTER" hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+        </columnConstraints>
+        <rowConstraints>
+          <RowConstraints maxHeight="109.0" minHeight="10.0" prefHeight="43.0" vgrow="SOMETIMES" />
+          <RowConstraints maxHeight="120.0" minHeight="10.0" prefHeight="40.0" vgrow="SOMETIMES" />
+          <RowConstraints maxHeight="81.0" minHeight="0.0" prefHeight="43.0" vgrow="SOMETIMES" />
+            <RowConstraints maxHeight="72.0" minHeight="10.0" prefHeight="43.0" vgrow="SOMETIMES" />
+            <RowConstraints maxHeight="72.0" minHeight="10.0" prefHeight="41.0" vgrow="SOMETIMES" />
+            <RowConstraints maxHeight="64.0" minHeight="10.0" prefHeight="43.0" vgrow="SOMETIMES" />
+            <RowConstraints maxHeight="54.0" minHeight="10.0" prefHeight="52.0" vgrow="SOMETIMES" />
+        </rowConstraints>
+         <children>
+            <Label styleClass="lblFont" text="아이디" />
+            <TextField fx:id="join_id" styleClass="txtFont" GridPane.columnIndex="1" />
+            <Button fx:id="join_id_check" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="35.0" prefWidth="70.0" text="중복체크" GridPane.columnIndex="2">
+               <styleClass>
+                  <String fx:value="joinBtn" />
+                  <String fx:value="btnFont" />
+               </styleClass></Button>
+            <Label styleClass="lblFont" text="비밀번호" GridPane.rowIndex="1" />
+            <PasswordField fx:id="join_pw" styleClass="txtFont" GridPane.columnIndex="1" GridPane.rowIndex="1" />
+            <Label styleClass="lblFont" text="비밀번호 확인" GridPane.rowIndex="2" />
+            <PasswordField fx:id="join_pw_check" styleClass="txtFont" GridPane.columnIndex="1" GridPane.rowIndex="2" />
+            <Label styleClass="lblFont" text="이름" GridPane.rowIndex="3" />
+            <TextField fx:id="join_name" styleClass="txtFont" GridPane.columnIndex="1" GridPane.rowIndex="3" />
+            <TextField fx:id="join_reg_first" styleClass="txtFont" GridPane.columnIndex="1" GridPane.rowIndex="4" />
+            <Label styleClass="lblFont" text="주민번호" GridPane.rowIndex="4" />
+            <Label styleClass="lblFont" text="전화번호" GridPane.rowIndex="5" />
+            <HBox alignment="CENTER" prefHeight="100.0" prefWidth="200.0" GridPane.columnIndex="2" GridPane.rowIndex="4">
+               <children>
+                  <PasswordField fx:id="join_reg_last" maxWidth="-Infinity" minWidth="-Infinity" prefHeight="32.0" prefWidth="34.0" promptText="1" styleClass="pwFont" />
+                  <Label alignment="CENTER" contentDisplay="CENTER" text="******" />
+               </children>
+            </HBox>
+            <ChoiceBox fx:id="join_phone_first" prefWidth="150.0" GridPane.columnIndex="1" GridPane.rowIndex="5">
+               <styleClass>
+                  <String fx:value="phone" />
+                  <String fx:value="txtFont" />
+               </styleClass></ChoiceBox>
+            <TextField fx:id="join_phone_middle" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefWidth="70.0" promptText="0000" styleClass="txtFont" GridPane.columnIndex="2" GridPane.rowIndex="5" />
+            <TextField fx:id="join_phone_last" maxWidth="-Infinity" minWidth="-Infinity" prefWidth="70.0" promptText="0000" styleClass="txtFont" GridPane.columnIndex="3" GridPane.rowIndex="5" />
+            <Button fx:id="join_enter" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="35.0" prefWidth="65.0" text="회원가입" GridPane.columnIndex="1" GridPane.rowIndex="6">
+               <styleClass>
+                  <String fx:value="joinBtn" />
+                  <String fx:value="btnFont" />
+               </styleClass></Button>
+            <Button fx:id="join_cancel" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="35.0" prefWidth="65.0" text="취소" GridPane.columnIndex="2" GridPane.rowIndex="6">
+               <styleClass>
+                  <String fx:value="joinBtn" />
+                  <String fx:value="btnFont" />
+               </styleClass></Button>
+         </children>
+      </GridPane>
+      <Label layoutX="206.0" layoutY="89.0" styleClass="warFont" text="8자~12자 영문자 숫자 특수문자 포함" />
+      <Label fx:id="join_pw_warning" layoutX="204.0" layoutY="128.0" styleClass="warFont" text="비밀번호가 달라요" />
+   </children>
+</AnchorPane>

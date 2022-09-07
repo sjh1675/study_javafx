@@ -1,0 +1,41 @@
+/* back.css */
+VBox {
+	-fx-border-color: black;
+	-fx-pref-width: 100px;
+	-fx-pref-height: 100px;
+}
+
+#vbox1 {
+	-fx-background-color: black;
+	-fx-background-radius: 20;
+	-fx-border-radius: 20;
+}
+
+#vbox2 {
+	-fx-background-color: rgba(255, 128, 128, 0.5);
+	-fx-background-color: linear-gradient(to bottom, #000000, #ff9999);	/* 매개1 : 방향, 매개2 : 시작색깔, 매개3 : 끝색깔 */
+}
+
+#vbox3 {
+	/* 반지름을 이용한 원형 그라디언트 */
+	-fx-background-color: radial-gradient(center 50% 50%, radius 50%, #ffffff, #fe642e); /* 매개1 : 시작점, 매개2 : 시작색깔, 매개3 : 끝색깔 */
+	-fx-background-radius: 50;
+	-fx-border-radius: 50;
+}
+
+#vbox4 {
+	-fx-background-color: skyblue;
+	-fx-background-image: url("resource/icon.gif");
+	-fx-background-size: 33.333%, 33.333%;
+	-fx-background-repeat: repeat-y; /* repeat, no-repeat, repeat-x, repeat-y */
+}
+
+#vbox5 {
+	-fx-background-color: yellow;
+	-fx-background-image: url(resource/loading.gif);
+	-fx-background-size: 50%, 50%;
+	-fx-background-repeat: no-repeat;
+	-fx-background-position: center;
+	-fx-background-position: bottom center;
+	-fx-background-position: 70% center; /* 왼쪽에서 70%, 위아래는 center */
+}

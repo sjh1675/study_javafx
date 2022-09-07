@@ -1,0 +1,17 @@
+TextField{
+	-fx-background-color:skyblue;
+}
+
+TextField:focused{
+	-fx-background-color:pink;
+	-fx-border-color:skyblue;
+	-fx-text-fill:white;
+	-fx-cursor:hand;	
+}
+
+Button:hover{
+	-fx-background-color:brown;
+	-fx-border-color:orange;
+	-fx-text-fill:white;
+	-fx-cursor:wait;
+}

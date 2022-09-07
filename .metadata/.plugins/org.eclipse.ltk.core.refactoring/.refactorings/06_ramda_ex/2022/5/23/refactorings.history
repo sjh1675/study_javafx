@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Rename type &apos;b_args.FunctionTest&apos; to &apos;ArgumentTest&apos;&#x0D;&#x0A;- Original project: &apos;06_ramda_ex&apos;&#x0D;&#x0A;- Original element: &apos;b_args.FunctionTest&apos;&#x0D;&#x0A;- Renamed element: &apos;b_args.ArgumentTest&apos;&#x0D;&#x0A;- Update references to refactored element&#x0D;&#x0A;- Update textual occurrences in comments and strings" description="Rename type &apos;FunctionTest&apos;" flags="589830" id="org.eclipse.jdt.ui.rename.type" input="/src&lt;b_args{FunctionTest.java[FunctionTest" matchStrategy="1" name="ArgumentTest" qualified="false" references="true" similarDeclarations="false" stamp="1653973245158" textual="false" version="1.0"/>
+</session>

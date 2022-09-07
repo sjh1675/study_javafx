@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="350.0" prefWidth="400.0" stylesheets="@../css/client.css" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="hospital.controller.user.data.User_Login">
+   <children>
+      <VBox alignment="CENTER" layoutX="150.0" layoutY="184.0" prefHeight="146.0" prefWidth="100.0" spacing="20.0">
+         <children>
+            <Button fx:id="login_enter" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="35.0" prefWidth="70.0" text="로그인" textFill="WHITE">
+               <styleClass>
+                  <String fx:value="loginBtn" />
+                  <String fx:value="btnFont" />
+               </styleClass>
+            </Button>
+            <Button fx:id="login_toJoin" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="35.0" prefWidth="70.0" text="회원가입">
+               <styleClass>
+                  <String fx:value="loginBtn" />
+                  <String fx:value="btnFont" />
+               </styleClass>
+            </Button>
+         </children>
+      </VBox>
+      <VBox alignment="CENTER_LEFT" layoutX="82.0" layoutY="30.0" prefHeight="140.0" prefWidth="182.0" spacing="5.0">
+         <children>
+            <Label styleClass="lblFont" text="아이디" />
+            <TextField fx:id="login_id" promptText="아이디를 입력하세요." styleClass="idpwFont" />
+            <Label styleClass="lblFont" text="비밀번호" />
+            <PasswordField fx:id="login_pw" promptText="비밀번호를 입력하세요." styleClass="idpwFont" />
+         </children>
+      </VBox>
+   </children>
+</AnchorPane>

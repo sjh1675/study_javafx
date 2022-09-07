@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane 
+ stylesheets="/app/application/Rule.css"
+prefHeight="600.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <Label alignment="CENTER" prefHeight="600.0" prefWidth="600.0" text="                                      블랙잭 룰 설명&#10;&#10;1. 카드는 조커를 뺀 총 52장의 숫자카드와 J, Q, K, A로 시작한다.&#10;&#10;2. 게임시작시 플레이어와 딜러 각각 카드를 두장씩 받는다.&#10;단, 처음 카드 1장은 상대가 못보며, 나머지 카드는 필드에 공개된다.&#10;&#10;3. 문양과 상관없이 기본 트럼프카드 숫자와 동일하다.&#10;단, J, Q, K은 10으로 인식하며, A는 1 혹은 11로 선택가능하다.&#10;&#10;4. HIT : 덱에서 자신의 손패에 카드를 추가한다.&#10;&#10;5. Stay : 플레이어는 더 이상 카드를 추가 할 수 없다.&#10;&#10;6. Black Jack : 카드의 최초합이 21이 될 경우 즉시 승리 한다.&#10;&#10;7. 모두 Stay를 누르면 패가 공개 되고, 서로 카드의 합을 비교한다.&#10;&#10;&#10;                                        승패 조건&#10;&#10;- 자신이 들고있는 카드의 총합이 21 혹은 21과 가까운 사람이 승리한다.&#10;&#10;- 21초과를 하면 bust가 되며, 무조건 패배를 한다.&#10;&#10;- 모두 bust거나, 숫자 합이 동일할 경우 무승부가 된다.&#10;&#10;"/>
+   </children>
+</AnchorPane>

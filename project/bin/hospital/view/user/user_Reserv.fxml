@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="350.0" prefWidth="400.0" stylesheets="@../css/client.css" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="hospital.controller.user.data.User_Reserv">
+   <children>
+      <HBox alignment="CENTER" layoutX="140.0" layoutY="270.0" prefHeight="50.0" prefWidth="150.0" spacing="75.0">
+         <children>
+            <Button fx:id="reserv_enter" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" prefHeight="35.0" prefWidth="65.0" text="예약" HBox.hgrow="ALWAYS">
+               <HBox.margin>
+                  <Insets />
+               </HBox.margin>
+               <styleClass>
+                  <String fx:value="reservBtn" />
+                  <String fx:value="btnFont" />
+               </styleClass></Button>
+         </children>
+      </HBox>
+      <HBox alignment="CENTER" layoutX="46.0" layoutY="28.0" prefHeight="215.0" prefWidth="337.0" spacing="70.0">
+         <children>
+            <VBox maxHeight="-Infinity" prefHeight="207.0" prefWidth="184.0" spacing="10.0">
+               <children>
+                  <Label styleClass="lblFont" text="예약 날짜" />
+                  <DatePicker fx:id="reserv_date" prefHeight="35.0" prefWidth="135.0" styleClass="dateFont" />
+               </children>
+            </VBox>
+            <VBox maxHeight="-Infinity" minHeight="-Infinity" prefHeight="207.0" prefWidth="171.0" spacing="10.0">
+               <children>
+                  <Label styleClass="lblFont" text="예약 시간" />
+                  <ListView fx:id="reserv_time" prefHeight="150.0" prefWidth="118.0">
+                     <styleClass>
+                        <String fx:value="listView" />
+                        <String fx:value="listViewFont" />
+                     </styleClass></ListView>
+               </children>
+            </VBox>
+         </children>
+         <padding>
+            <Insets top="20.0" />
+         </padding>
+      </HBox>
+   </children>
+</AnchorPane>

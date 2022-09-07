@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="950.0" prefWidth="720.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.manager.Cleanser">
+   <children>
+      <ImageView fitHeight="50.0" fitWidth="720.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../img/임시로고.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="900.0" fitWidth="720.0" layoutY="50.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../img/1페이지.png" />
+         </image>
+      </ImageView>
+      <Button fx:id="btnmanagement" layoutX="62.0" layoutY="554.0" mnemonicParsing="false" onAction="#management" opacity="0.0" prefHeight="304.0" prefWidth="257.0" />
+      <Button fx:id="btnsalesview" layoutX="417.0" layoutY="554.0" mnemonicParsing="false" onAction="#salesview" opacity="0.0" prefHeight="304.0" prefWidth="257.0" text="Button" />
+      <Button fx:id="btnhome" layoutX="669.0" mnemonicParsing="false" onAction="#home" opacity="0.0" prefHeight="50.0" prefWidth="51.0" text="Button" />
+   </children>
+</AnchorPane>

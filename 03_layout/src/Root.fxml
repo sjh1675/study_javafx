@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.control.Button?>
+
+<!--
+	HBox Container 선언
+	HBox root = new HBox();
+-->
+
+<HBox spacing="10.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1">
+	<padding> <!-- 안쪽 여백 -->
+		<Insets bottom="10" left="10" right="10" top="10" />
+	</padding>
+	<!--  자식 컨트롤 추가 -->
+	<children>
+	<!-- TextField 선언 : 사용자에게 문자열 데이터를 작성받는 공간 -->
+		<TextField>
+			<!-- TestField의 폭 설정 -->
+			<prefWidth>200.0</prefWidth>
+		</TextField>
+		<Button>
+			<text>확인</text>
+		</Button>
+	</children>
+</HBox>

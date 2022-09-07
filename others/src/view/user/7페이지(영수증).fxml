@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="950.0" prefWidth="720.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.Receipt">
+   <children>
+      <ImageView fitHeight="50.0" fitWidth="720.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../img/7페이지%20영수증%20상단로고.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="900.0" fitWidth="720.0" layoutY="50.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../img/7페이지%20영수증.png" />
+         </image>
+      </ImageView>
+      <Button fx:id="btnhome" layoutX="666.0" mnemonicParsing="false" onAction="#home" opacity="0.0" prefHeight="50.0" prefWidth="54.0" text="Button" />
+      <Button fx:id="btnhome2" layoutX="52.0" layoutY="711.0" mnemonicParsing="false" onAction="#home2" opacity="0.0" prefHeight="194.0" prefWidth="617.0" text="Button" />
+      <Label fx:id="phone" layoutX="275.0" layoutY="200.0" prefHeight="50.0" prefWidth="361.0" text="010-1234-1234">
+         <font>
+            <Font size="36.0" />
+         </font>
+      </Label>
+      <Label fx:id="category1" layoutX="275.0" layoutY="261.0" prefHeight="50.0" prefWidth="361.0" text="중형세탁기">
+         <font>
+            <Font size="36.0" />
+         </font>
+      </Label>
+      <Label fx:id="temperature" layoutX="275.0" layoutY="328.0" prefHeight="50.0" prefWidth="361.0" text="뜨거움">
+         <font>
+            <Font size="36.0" />
+         </font>
+      </Label>
+      <Label fx:id="drgree" layoutX="275.0" layoutY="387.0" prefHeight="50.0" prefWidth="361.0" text="강함">
+         <font>
+            <Font size="36.0" />
+         </font>
+      </Label>
+      <Label fx:id="starttime" layoutX="275.0" layoutY="455.0" prefHeight="50.0" prefWidth="361.0" text="09:10">
+         <font>
+            <Font size="36.0" />
+         </font>
+      </Label>
+      <Label fx:id="endtime" layoutX="275.0" layoutY="514.0" prefHeight="50.0" prefWidth="361.0" text="09:50">
+         <font>
+            <Font size="36.0" />
+         </font>
+      </Label>
+      <Label fx:id="amoment" layoutX="275.0" layoutY="577.0" prefHeight="50.0" prefWidth="361.0" text="5500">
+         <font>
+            <Font size="36.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>

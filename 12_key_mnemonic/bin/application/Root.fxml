@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.AnchorPane?>
+
+
+<AnchorPane prefHeight="80.0" prefWidth="250.0" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/8" fx:controller="application.MainController">
+   <children>
+      <Button fx:id="btn1" layoutX="27.0" layoutY="29.0" mnemonicParsing="false" text="Button" />
+      <Button fx:id="btn2" layoutX="97.0" layoutY="29.0" text="Button" />
+      <Button fx:id="btn3" layoutX="169.0" layoutY="29.0" text="Button" />
+   </children>
+</AnchorPane>

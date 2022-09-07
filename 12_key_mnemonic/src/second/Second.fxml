@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.AnchorPane?>
+
+
+<AnchorPane fx:controller="second.SecondController" prefHeight="50.0" prefWidth="200.0" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/8">
+   <children>
+      <Button fx:id="btn1" layoutX="14.0" layoutY="14.0" text="_Main" />
+      <Button fx:id="btn2" layoutX="131.0" layoutY="14.0" text="Canc_el" />
+   </children>
+</AnchorPane>
